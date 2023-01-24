@@ -19,7 +19,7 @@ function FirstPostPage({ post }) {
       </Head>
       <main>
         <h1>{post.title}</h1>
-        <p>{post.body}</p>
+        <article dangerouslySetInnerHTML={{ __html: post.body }} />
       </main>
     </>
   );
