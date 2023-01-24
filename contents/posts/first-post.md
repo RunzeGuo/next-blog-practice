@@ -1,5 +1,6 @@
 ---
 title: "First Post"
+date: "2023-01-24"
 ---
 
 This is the first post, written in markdown
