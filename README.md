@@ -13,3 +13,5 @@
 matter 用于获取 markdown 文件里的 title date content 部分
 
 marked 用于把 markdown 文件变成 html
+
+在/contents/posts/里直接添加markdown文件,会自动将链接显示到homepage里
