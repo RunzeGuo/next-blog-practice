@@ -1,8 +1,15 @@
 import Link from "next/link";
-import NavBar from "../components/NavBar";
 import Head from "next/head";
+import { getPostList } from "../lib/posts";
 
-function HomePage() {
+export async function getStaticProps() {
+  const postList = await getPostList();
+  return {
+    props: { postList },
+  };
+}
+
+function HomePage({ postList }) {
   return (
     <>
       <Head>
@@ -11,11 +18,16 @@ function HomePage() {
       <main>
         <h1>Runze's Blog</h1>
         <ul>
-          <li>
+          {postList.map((post) => (
+            <li key={post.slug}>
+              <Link href={`/posts/${post.slug}`}>{post.title}</Link>
+            </li>
+          ))}
+          {/* <li>
             <Link href="/posts/first-post">First Post</Link>
           </li>
           <li>Two</li>
-          <li>Three</li>
+          <li>Three</li> */}
         </ul>
       </main>
     </>
