@@ -1,13 +1,21 @@
 ---
-title: "First Post"
-date: "2023-01-24"
+title: "MacOS VS Code 批量修改变量名，批量注释"
+date: "2023-02-12"
 ---
 
-This is the **First Post**, written in markdown
+**在 MacOS 上面，批量修改变量**
 
-Here's **bold text**.
+- 选中要修改的变量名称，然后按 cmd+shift+L
+- 选中要修改的变量名称，然后按 F2
+- 先选中变量名，然后按 cmd+D，依次选中下个变量名
 
-A list
+**在 MacOS 上面，批量注释**
 
-- One
-- Two
+- 选中内容后按 cmd+/，多行注释和取消多行注释
+- 当光标放在某一行后按 cmd+/，注释或者取消注释这一行
+- 选中一行中的某处，alt+shift+A，注释掉选中的内容
+
+作者：shuaiqifeiyang
+链接：https://www.jianshu.com/p/199c2bc13867
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
